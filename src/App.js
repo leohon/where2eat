@@ -3,6 +3,7 @@ import './App.css';
 import { doc, getFirestore } from 'firebase/firestore';
 import { FirestoreProvider, useFirestoreDocData, useFirestore, useFirebaseApp } from 'reactfire';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 function BurritoTaste() {
   // easily access the Firestore library
@@ -22,23 +23,6 @@ function BurritoTaste() {
 function App() {
   const firestoreInstance = getFirestore(useFirebaseApp());
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
-
     <FirestoreProvider sdk={firestoreInstance}>
       <Header />
 
@@ -46,9 +30,7 @@ function App() {
 
       </main>
 
-      <footer>
-
-      </footer>
+      <Footer />
 
       {/* Test Code */}
       <h1>🌯</h1>
