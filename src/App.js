@@ -3,6 +3,8 @@ import './App.css';
 import { doc, getFirestore } from 'firebase/firestore';
 import { FirestoreProvider, useFirestoreDocData, useFirestore, useFirebaseApp } from 'reactfire';
 import Header from './components/Header';
+import Steps from './components/Steps';
+import Form from './components/Form';
 import Footer from './components/Footer';
 
 function BurritoTaste() {
@@ -27,7 +29,8 @@ function App() {
       <Header />
 
       <main>
-
+        <Steps />
+        <Form />
       </main>
 
       <Footer />
