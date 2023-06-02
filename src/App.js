@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { doc, getFirestore } from 'firebase/firestore';
 import { FirestoreProvider, useFirestoreDocData, useFirestore, useFirebaseApp } from 'reactfire';
