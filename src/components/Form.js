@@ -1,6 +1,6 @@
 export default function Form() {
   return (
-    <div>
+    <section className="form">
       <form action="">
         <h2>Restaurant</h2>
 
@@ -15,6 +15,6 @@ export default function Form() {
 
         <button>Submit</button>
       </form>
-    </div>
+    </section>
   )
 }
