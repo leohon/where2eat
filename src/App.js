@@ -5,6 +5,7 @@ import { FirestoreProvider, useFirestoreDocData, useFirestore, useFirebaseApp } 
 import Header from './components/Header';
 import Steps from './components/Steps';
 import Form from './components/Form';
+import Book from './components/Book';
 import Footer from './components/Footer';
 
 function BurritoTaste() {
@@ -31,6 +32,7 @@ function App() {
       <main>
         <Steps />
         <Form />
+        <Book />
       </main>
 
       <Footer />
