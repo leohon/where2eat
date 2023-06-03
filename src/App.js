@@ -37,11 +37,11 @@ function App() {
         <Book />
       </main>
 
-      <Footer />
-
       {/* Test Code */}
-      <h1>🌯</h1>
+      <div>🌯</div>
       <BurritoTaste />
+
+      <Footer />
     </FirestoreProvider>
   );
 }
