@@ -7,7 +7,21 @@ html { box-sizing: border-box;}
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
 /* General */
+html {
+  font-size: 125%;
+  line-height: 1.5rem;
+}
 
+h1, h2, h3, p, label, input, button {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
+}
 
 /* Header */
 
@@ -17,6 +31,21 @@ html { box-sizing: border-box;}
 
 /* Form */
 
+
+/* Book */
+.groupA {
+  /* border: solid 2px; */
+}
+.groupA h2::after {
+  content: "";
+  display: block;
+  width: 87%;
+  height: 2px;
+  background: #000;
+  right: 55px;
+  top: 39%;
+  position: absolute;
+}
 
 /* Footer */
 
