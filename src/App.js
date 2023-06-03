@@ -26,22 +26,24 @@ function App() {
   const firestoreInstance = getFirestore(useFirebaseApp());
   return (
     <FirestoreProvider sdk={firestoreInstance}>
-      <Header />
+      <div className="wrapper">
+        <Header />
 
-      <main>
-        <div className='userUse'>
-          <Steps />
-          <Form />
-        </div>
+        <main>
+          <section className='userUse'>
+            <Steps />
+            <Form />
+          </section>
 
-        <Book />
-      </main>
+          <Book />
+        </main>
 
-      {/* Test Code */}
-      <div>🌯</div>
-      <BurritoTaste />
+        {/* Test Code */}
+        <div>🌯</div>
+        <BurritoTaste />
 
-      <Footer />
+        <Footer />
+      </div>
     </FirestoreProvider>
   );
 }

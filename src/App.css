@@ -46,8 +46,6 @@ h4 {
 /* Steps & Form common styles */
 .userUse {
   display: flex;
-  width: 90%;
-  margin: 0 auto;
   justify-content: space-evenly;
   border-bottom: 2px dashed;
   border-top: 2px dashed;
@@ -95,13 +93,11 @@ button {
   margin-bottom: 50px;
 }
 
-/* .groupA h2, .groupB h2, .groupC h2, .groupD h2, .groupE h2, .groupF h2, .groupG h2, .groupH h2, .groupI h2, .groupJ h2, .groupK h2, .groupL h2, .groupM h2, .groupN h2, .groupO h2, .groupP h2, .groupQ h2, .groupR h2, .groupS h2, .groupT h2, .groupU h2, .groupV h2, .groupW h2, .groupX h2, .groupY h2, .groupZ  */
 .book h2 {
   width: 50px;
   text-align: center;
 }
 
-/* .groupA h2::after, .groupB h2::after, .groupC h2::after, .groupD h2::after, .groupE h2::after, .groupF h2::after, .groupG h2::after, .groupH h2::after, .groupI h2::after, .groupJ h2::after, .groupK h2::after, .groupL h2::after, .groupM h2::after, .groupN h2::after, .groupO h2::after, .groupP h2::after, .groupQ h2::after, .groupR h2::after, .groupS h2::after, .groupT h2::after, .groupU h2::after, .groupV h2::after, .groupW h2::after, .groupX h2::after, .groupY h2::after, .groupZ h2 */
 .letter::after {
   content: "";
   display: block;
