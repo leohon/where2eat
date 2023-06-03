@@ -40,7 +40,9 @@ export default function Form() {
             <input type="text" className="dish" id="dish" /> {/* required */}
           </div>
 
-          <button className="submit">Submit</button>
+          <div className="buttonContainer">
+            <button className="submit">Submit</button>
+          </div>
         </form>
     </section>
   )
