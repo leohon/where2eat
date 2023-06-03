@@ -22,20 +22,22 @@ export default function Form() {
 
   return (
     <section className="form">
-      <form onSubmit={clear}>
-        <h2>Restaurant</h2>
+      <div className="wrapper">
+        <form onSubmit={clear}>
+          <h2>Restaurant</h2>
 
-        <label htmlFor="name">Name</label>
-        <input type="text" className="name" id="name" required/>
-        
-        <label htmlFor="address">Address</label>
-        <input type="text" className="address" id="address" /> {/* required */}
-        
-        <label htmlFor="dish">Recommended Dish</label>
-        <input type="text" className="dish" id="dish" /> {/* required */}
+          <label htmlFor="name">Name</label>
+          <input type="text" className="name" id="name" required/>
+          
+          <label htmlFor="address">Address</label>
+          <input type="text" className="address" id="address" /> {/* required */}
+          
+          <label htmlFor="dish">Recommended Dish</label>
+          <input type="text" className="dish" id="dish" /> {/* required */}
 
-        <button className="submit">Submit</button>
-      </form>
+          <button className="submit">Submit</button>
+        </form>
+      </div>
     </section>
   )
 }

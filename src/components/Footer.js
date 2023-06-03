@@ -1,7 +1,9 @@
 export default function Footer() {
   return (
     <footer>
-      <p>Created by Leo Hon 2023</p>
+      <div className="wrapper">
+        <p>Created by Leo Hon 2023</p>
+      </div>
     </footer>
   )
 }
