@@ -10,6 +10,7 @@ html { box-sizing: border-box;}
 html {
   font-size: 125%;
   line-height: 1.5rem;
+  letter-spacing: 0.05rem;
 }
 
 h1, h2, h3, p, label, input, button {
@@ -23,20 +24,73 @@ h1, h2, h3, p, label, input, button {
   margin: 0 auto;
 }
 
-/* Header */
+section {
+  margin: 25px 0;
+}
 
+/* Header */
+h1 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+h4 {
+  /* width: 75%; */
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Steps & Form common styles */
+.userUse {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  border-bottom: 2px dashed;
+}
+
+.steps, .form {
+  width: 45%;
+}
+
+.steps h2, .form h2 {
+  text-align: center;
+  padding-bottom: 15px;
+}
 
 /* Steps */
-
+.steps p {
+  text-align: justify;
+}
 
 /* Form */
+.containLI {
+  text-align: center;
+  margin-bottom: 10px;
+}
 
+label {
+  display: inline-block;
+  width: 75px;
+  text-align: left;
+  margin-right: 15px;
+}
+
+.buttonContainer {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+}
 
 /* Book */
-.groupA {
-  /* border: solid 2px; */
+.groupA, .groupB, .groupC, .groupD, .groupE, .groupF, .groupG, .groupH, .groupI, .groupJ, .groupK, .groupL, .groupM, .groupN, .groupO, .groupP, .groupQ, .groupR, .groupS, .groupT, .groupU, .groupV, .groupW, .groupX, .groupY, .groupZ {
+  margin-bottom: 50px;
 }
-.groupA h2::after {
+
+/* .groupA h2::after {
   content: "";
   display: block;
   width: 87%;
@@ -45,9 +99,11 @@ h1, h2, h3, p, label, input, button {
   right: 55px;
   top: 39%;
   position: absolute;
-}
+} */
 
 /* Footer */
-
+footer {
+  text-align: center;
+}
 
 /* Media Queries */

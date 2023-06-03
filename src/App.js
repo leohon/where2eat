@@ -29,8 +29,11 @@ function App() {
       <Header />
 
       <main>
-        <Steps />
-        <Form />
+        <div className='userUse'>
+          <Steps />
+          <Form />
+        </div>
+
         <Book />
       </main>
 
