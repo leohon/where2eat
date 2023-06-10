@@ -17,6 +17,7 @@ import { FirebaseAppProvider } from 'reactfire';
 const firebaseConfig = {
   apiKey: "AIzaSyAfHw7jtdiEK-Lqcf5JQKpKgXhOl7_SuYg",
   authDomain: "where2eat-6bcbd.firebaseapp.com",
+  // databaseURL: "https://where2eat-6bcbd-default-rtdb.firebaseio.com",
   projectId: "where2eat-6bcbd",
   storageBucket: "where2eat-6bcbd.appspot.com",
   messagingSenderId: "1035135776300",

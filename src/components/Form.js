@@ -14,9 +14,11 @@ export default function Form() {
     e.preventDefault();
 
     const form = document.querySelector("form");
-    const name = document.getElementById("name");
+    // const name = document.getElementById("name");
+    // const address = document.getElementById("address");
+    // const dish = document.getElementById("dish");
 
-    check(name.value[0]);
+    // check(name.value[0]);
     form.reset();
   }
 
