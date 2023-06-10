@@ -35,7 +35,7 @@ function App() {
     }
   }
   
-  const loop = () => {
+    const loop = () => {
     //Loop through array and print each name.
     for (let i = 0; i < dataArray.length; i++) {
       // Create the card and p elements for the data.
@@ -44,10 +44,12 @@ function App() {
       const name = document.createElement("p");
       const address = document.createElement("p");
       const dish = document.createElement("p");
-      
+
       // Determine the specific card container
       const block = check(dataArray[i].name[0]);
-      block.innerHTML = "";
+
+      // ISSUE: last data entry of same first letter overrides earlier entries. Commented out for now, works on page refresh. Code refresh causes multiple entries***.
+      // block.innerHTML = "";
 
       // Add data to p tags
       name.innerHTML = dataArray[i].name;
@@ -82,10 +84,6 @@ function App() {
             <Steps />
             <Form />
           </section>
-
-          <div className="test" id="test">
-            <h5>Testing</h5>
-          </div>
 
           <Book />
         </main>

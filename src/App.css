@@ -32,13 +32,13 @@ section {
 header {
   margin-top: 25px;
 }
+
 h1, .subtitle {
   text-align: center;
-  padding: 20px 0;
+  padding-bottom: 20px;
 }
 
 h4 {
-  /* width: 75%; */
   text-align: center;
   margin: 0 auto;
 }
@@ -85,14 +85,9 @@ label {
 button {
   padding: 10px 0;
   width: 50%;
-  /* margin-top: 20px; */
 }
 
 /* Book */
-.group {
-  margin-bottom: 50px;
-}
-
 .book h2 {
   width: 50px;
   text-align: center;
@@ -109,13 +104,29 @@ button {
   position: relative;
 }
 
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 15px 0 15px 50px;
+}
+
 .card {
   border: 1px solid black;
+  border-radius: 25px;
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.card p {
+  text-align: center;
+  padding: 5px 0;
 }
 
 /* Footer */
 footer {
   text-align: center;
+  padding: 25px 0;
 }
 
 /* Media Queries */
