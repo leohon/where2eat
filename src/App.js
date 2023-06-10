@@ -1,6 +1,7 @@
 import './App.css';
 import { getDatabase, ref } from 'firebase/database';
-import { DatabaseProvider, useDatabase, useDatabaseListData, useDatabaseObjectData, useFirebaseApp } from 'reactfire';
+// useDatabase, useDatabaseListData
+import { DatabaseProvider, useDatabaseObjectData, useFirebaseApp } from 'reactfire';
 import Header from './components/Header';
 import Steps from './components/Steps';
 import Form from './components/Form';
