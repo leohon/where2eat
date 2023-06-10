@@ -19,17 +19,17 @@ function App() {
     return <span>loading...</span>;
   }
   
-  //check
+  //Matches the first letter of the restaurant name to the corresponding group in the address book.
   const check = (letter) => {
     letter = letter.toUpperCase();
     const alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
-    
-    // Might change to: letter to CAPS, compare className to 'group' + letter, create in div
 
+    //Loop through alphabet, using the index to target the div, then the childNodes for the specific card container
     for (let i = 0; i < alphabet.length; i++) {
       if (letter === alphabet[i]) {
-        console.log("true" + i);
-        // return letter;
+        const specCardContainer = document.getElementsByClassName("group")[i].childNodes[1];
+
+        return specCardContainer;
       }
     }
   }
@@ -37,17 +37,27 @@ function App() {
   const loop = () => {
     //Loop through array and print each name.
     for (let i = 0; i < dataArray.length; i++) {
-      const test = document.getElementById("test");
+      // Create the card and p elements for the data.
       const card = document.createElement("div");
+      card.classList.add("card");
       const name = document.createElement("p");
       const address = document.createElement("p");
       const dish = document.createElement("p");
-      check(dataArray[i].name[0]);
+      
+      // Determine the specific card container
+      const block = check(dataArray[i].name[0]);
+      block.innerHTML = "";
 
+      // Add data to p tags
       name.innerHTML = dataArray[i].name;
+      address.innerHTML = dataArray[i].address;
+      dish.innerHTML = dataArray[i].dish;
 
+      // Append p tags to card div then append div to specific card container
       card.appendChild(name);
-      test.appendChild(card);
+      card.appendChild(address);
+      card.appendChild(dish);
+      block.appendChild(card);
     }
   }
 
@@ -57,8 +67,6 @@ function App() {
       dataArray.push({key: key, name: data[key].name, address: data[key].address, dish: data[key].dish});
     }
   }
-
-  console.log(dataArray);
   
   // Waits for page to load before setting up content.
   setTimeout(loop, 1000);

@@ -1,161 +1,161 @@
 export default function Book() {
   return (
     <section className="book">
-      <div className="groupA">
+      <div className="group A">
         <div className="letter">
           <h2>A</h2>
         </div>
-        <div></div>
+        <div className="cardContainer" id="cardContainer"></div>
       </div>
-      <div className="groupB">
+      <div className="group B">
         <div className="letter">
           <h2>B</h2>
         </div>
-        <div></div>
+        <div className="cardContainer" id="cardContainer"></div>
       </div>
-      <div className="groupC">
+      <div className="group C">
         <div className="letter">
           <h2>C</h2>
         </div>
-        <div></div>
+        <div className="cardContainer" id="cardContainer"></div>
       </div>
-      <div className="groupD">
+      <div className="group D">
         <div className="letter">
           <h2>D</h2>
         </div>
-        <div></div>
+        <div className="cardContainer" id="cardContainer"></div>
       </div>
-      <div className="groupE">
+      <div className="group E">
         <div className="letter">
           <h2>E</h2>
         </div>
-        <div></div>
+        <div className="cardContainer" id="cardContainer"></div>
       </div>
-      <div className="groupF">
+      <div className="group F">
         <div className="letter">
           <h2>F</h2>
         </div>
-        <div></div>
+        <div className="cardContainer" id="cardContainer"></div>
       </div>
-      <div className="groupG">
+      <div className="group G">
         <div className="letter">
           <h2>G</h2>
         </div>
-        <div></div>
+        <div className="cardContainer" id="cardContainer"></div>
       </div>
-      <div className="groupH">
+      <div className="group H">
         <div className="letter">
           <h2>H</h2>
         </div>
-        <div></div>
+        <div className="cardContainer" id="cardContainer"></div>
       </div>
-      <div className="groupI">
+      <div className="group I">
         <div className="letter">
           <h2>I</h2>
         </div>
-        <div></div>
+        <div className="cardContainer" id="cardContainer"></div>
       </div>
-      <div className="groupJ">
+      <div className="group J">
         <div className="letter">
           <h2>J</h2>
         </div>
-        <div></div>
+        <div className="cardContainer" id="cardContainer"></div>
       </div>
-      <div className="groupK">
+      <div className="group K">
         <div className="letter">
           <h2>K</h2>
         </div>
-        <div></div>
+        <div className="cardContainer" id="cardContainer"></div>
       </div>
-      <div className="groupL">
+      <div className="group L">
         <div className="letter">
           <h2>L</h2>
         </div>
-        <div></div>
+        <div className="cardContainer" id="cardContainer"></div>
       </div>
-      <div className="groupM">
+      <div className="group M">
         <div className="letter">
           <h2>M</h2>
         </div>
-        <div></div>
+        <div className="cardContainer" id="cardContainer"></div>
       </div>
-      <div className="groupN">
+      <div className="group N">
         <div className="letter">
           <h2>N</h2>
         </div>
-        <div></div>
+        <div className="cardContainer" id="cardContainer"></div>
       </div>
-      <div className="groupO">
+      <div className="group O">
         <div className="letter">
           <h2>O</h2>
         </div>
-        <div></div>
+        <div className="cardContainer" id="cardContainer"></div>
       </div>
-      <div className="groupP">
+      <div className="group P">
         <div className="letter">
           <h2>P</h2>
         </div>
-        <div></div>
+        <div className="cardContainer" id="cardContainer"></div>
       </div>
-      <div className="groupQ">
+      <div className="group Q">
         <div className="letter">
           <h2>Q</h2>
         </div>
-        <div></div>
+        <div className="cardContainer" id="cardContainer"></div>
       </div>
-      <div className="groupR">
+      <div className="group R">
         <div className="letter">
           <h2>R</h2>
         </div>
-        <div></div>
+        <div className="cardContainer" id="cardContainer"></div>
       </div>
-      <div className="groupS">
+      <div className="group S">
         <div className="letter">
           <h2>S</h2>
         </div>
-        <div></div>
+        <div className="cardContainer" id="cardContainer"></div>
       </div>
-      <div className="groupT">
+      <div className="group T">
         <div className="letter">
           <h2>T</h2>
         </div>
-        <div></div>
+        <div className="cardContainer" id="cardContainer"></div>
       </div>
-      <div className="groupU">
+      <div className="group U">
         <div className="letter">
           <h2>U</h2>
         </div>
-        <div></div>
+        <div className="cardContainer" id="cardContainer"></div>
       </div>
-      <div className="groupV">
+      <div className="group V">
         <div className="letter">
           <h2>V</h2>
         </div>
-        <div></div>
+        <div className="cardContainer" id="cardContainer"></div>
       </div>
-      <div className="groupW">
+      <div className="group W">
         <div className="letter">
           <h2>W</h2>
         </div>
-        <div></div>
+        <div className="cardContainer" id="cardContainer"></div>
       </div>
-      <div className="groupX">
+      <div className="group X">
         <div className="letter">
           <h2>X</h2>
         </div>
-        <div></div>
+        <div className="cardContainer" id="cardContainer"></div>
       </div>
-      <div className="groupY">
+      <div className="group Y">
         <div className="letter">
           <h2>Y</h2>
         </div>
-        <div></div>
+        <div className="cardContainer" id="cardContainer"></div>
       </div>
-      <div className="groupZ">
+      <div className="group Z">
         <div className="letter">
           <h2>Z</h2>
         </div>
-        <div></div>
+        <div className="cardContainer" id="cardContainer"></div>
       </div>
     </section>
   )

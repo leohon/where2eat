@@ -89,7 +89,7 @@ button {
 }
 
 /* Book */
-.groupA, .groupB, .groupC, .groupD, .groupE, .groupF, .groupG, .groupH, .groupI, .groupJ, .groupK, .groupL, .groupM, .groupN, .groupO, .groupP, .groupQ, .groupR, .groupS, .groupT, .groupU, .groupV, .groupW, .groupX, .groupY, .groupZ {
+.group {
   margin-bottom: 50px;
 }
 
@@ -107,6 +107,10 @@ button {
   left: 50px;
   top: -15px;
   position: relative;
+}
+
+.card {
+  border: 1px solid black;
 }
 
 /* Footer */
