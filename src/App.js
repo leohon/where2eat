@@ -33,6 +33,23 @@ function App() {
       }
     }
   }
+  
+  const loop = () => {
+    //Loop through array and print each name.
+    for (let i = 0; i < dataArray.length; i++) {
+      const test = document.getElementById("test");
+      const card = document.createElement("div");
+      const name = document.createElement("p");
+      const address = document.createElement("p");
+      const dish = document.createElement("p");
+      check(dataArray[i].name[0]);
+
+      name.innerHTML = dataArray[i].name;
+
+      card.appendChild(name);
+      test.appendChild(card);
+    }
+  }
 
   //Map through each data entry and store in array.
   for (const key in data) {
@@ -43,23 +60,8 @@ function App() {
 
   console.log(dataArray);
   
-  //Loop through array and print each name.
-  for (let i = 0; i < dataArray.length; i++) {
-    console.log(dataArray[i].name);
-    check(dataArray[i].name[0]);
-
-    const test = document.getElementById("test");
-    const name = document.createElement("p");
-    const address = document.createElement("p");
-    const dish = document.createElement("p");
-
-    name.innerHTML = dataArray[i].name;
-    console.log(name);
-
-    test.appendChild(name);
-    // if (test === null) {
-    // }
-  }
+  // Waits for page to load before setting up content.
+  setTimeout(loop, 1000);
 
   return (
     <DatabaseProvider sdk={database}>
@@ -73,7 +75,7 @@ function App() {
           </section>
 
           <div className="test" id="test">
-
+            <h5>Testing</h5>
           </div>
 
           <Book />
