@@ -1,5 +1,9 @@
 export default function Book() {
   return (
+    /**
+     * Book section is divided into groups for each letter of the alphabet.
+     * Each group has it's respective letter and a card container that will hold information in a card.
+     */
     <section className="book">
       <div className="group A">
         <div className="letter">

@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
 import { FirebaseAppProvider } from 'reactfire';
 
 // Import the functions you need from the SDKs you need
@@ -17,7 +16,6 @@ import { FirebaseAppProvider } from 'reactfire';
 const firebaseConfig = {
   apiKey: "AIzaSyAfHw7jtdiEK-Lqcf5JQKpKgXhOl7_SuYg",
   authDomain: "where2eat-6bcbd.firebaseapp.com",
-  // databaseURL: "https://where2eat-6bcbd-default-rtdb.firebaseio.com",
   projectId: "where2eat-6bcbd",
   storageBucket: "where2eat-6bcbd.appspot.com",
   messagingSenderId: "1035135776300",
@@ -25,14 +23,8 @@ const firebaseConfig = {
   measurementId: "G-2JHXPYYP1P"
 };
 
-// Initialize Firebase
-// const app = initializeApp(firebaseConfig);
-// const analytics = getAnalytics(app);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  // <React.StrictMode>
-  //   <App />
-  // </React.StrictMode>
   <FirebaseAppProvider firebaseConfig={firebaseConfig}>
     <App />
   </FirebaseAppProvider>,
