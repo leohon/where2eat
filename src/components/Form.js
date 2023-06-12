@@ -1,6 +1,25 @@
-export default function Form() {  
+import { getDatabase, ref, push } from "firebase/database";
+import { useFirebaseApp } from 'reactfire';
+
+export default function Form(props) {  
+  const database = getDatabase(useFirebaseApp());
+  const dataRef = ref(database);
+  
   const clear = (e) => {
     e.preventDefault();
+    
+    const nameVal = document.getElementById("name").value;
+    const addressVal = document.getElementById("address").value;
+    const dishVal = document.getElementById("dish").value;
+    
+    const newUser = {
+      name: nameVal,
+      address: addressVal,
+      dish: dishVal
+    }
+    
+    push(dataRef, newUser)
+
     document.querySelector("form").reset();
   }
 

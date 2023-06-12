@@ -1,5 +1,5 @@
 import './App.css';
-import { getDatabase, ref } from 'firebase/database';
+import { getDatabase, ref, push } from 'firebase/database';
 // useDatabase, useDatabaseListData
 import { DatabaseProvider, useDatabaseObjectData, useFirebaseApp } from 'reactfire';
 import Header from './components/Header';
@@ -74,6 +74,22 @@ function App() {
   // Waits for page to load before setting up content.
   setTimeout(loop, 1000);
 
+  // const input = () => {
+  //   const nameVal = document.getElementById("name").value;
+  //   const addressVal = document.getElementById("address").value;
+  //   const dishVal = document.getElementById("dish").value;
+
+  //   const newUser = {
+  //     name: nameVal,
+  //     address: addressVal,
+  //     dish: dishVal
+  //   }
+    
+  //   console.log(nameVal)
+    
+  //   // push(dataRef, newUser)
+  // }
+
   return (
     <DatabaseProvider sdk={database}>
       <div className="wrapper">
@@ -82,7 +98,9 @@ function App() {
         <main>
           <section className='userUse'>
             <Steps />
-            <Form />
+            <Form 
+            // input={input}
+            />
           </section>
 
           <Book />
