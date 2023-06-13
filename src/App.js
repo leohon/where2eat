@@ -33,8 +33,14 @@ function App() {
   }
   
   const display = () => {
-    //Loop through array and print the card.
-    for (let i = 0; i < dataArray.length; i++) {
+    // Clear all card containers
+    const allCardContainers = document.getElementsByClassName("cardContainer");
+    for (let i = 0; i < allCardContainers.length; i++) {
+      allCardContainers[i].innerHTML = "";
+    }
+
+    // Loop through array and print the card.
+    for (let j = 0; j < dataArray.length; j++) {
       // Create the card (with class name) and p elements for the data.
       const card = document.createElement("div");
       card.classList.add("card");
@@ -43,12 +49,12 @@ function App() {
       const dish = document.createElement("p");
 
       // Determine the specific card container
-      const block = check(dataArray[i].name[0]);
+      const block = check(dataArray[j].name[0]);
 
       // Add data to p tags
-      name.innerHTML = dataArray[i].name;
-      address.innerHTML = dataArray[i].address;
-      dish.innerHTML = dataArray[i].dish;
+      name.innerHTML = dataArray[j].name;
+      address.innerHTML = dataArray[j].address;
+      dish.innerHTML = dataArray[j].dish;
 
       // Append p tags to card div then append div to specific card container
       card.appendChild(name);
