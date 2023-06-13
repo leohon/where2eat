@@ -51,10 +51,14 @@ function App() {
       // Determine the specific card container
       const block = check(dataArray[j].name[0]);
 
+      const nameStr = dataArray[j].name;
+      const addressStr = dataArray[j].address;
+      const dishStr = dataArray[j].dish;
+
       // Add data to p tags
-      name.innerHTML = dataArray[j].name;
-      address.innerHTML = dataArray[j].address;
-      dish.innerHTML = dataArray[j].dish;
+      name.innerHTML = nameStr[0].toUpperCase() + nameStr.slice(1);
+      address.innerHTML = addressStr;
+      dish.innerHTML = dishStr[0].toUpperCase() + dishStr.slice(1);
 
       // Append p tags to card div then append div to specific card container
       card.appendChild(name);
