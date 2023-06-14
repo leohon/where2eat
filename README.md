@@ -18,6 +18,6 @@ Where 2 Eat @ is a self-directed project created for a job application as a Web 
 
 ## Contact
 
-Email: leo-hon@outlook.com
-LinkedIn: https://www.linkedin.com/in/leo-hon/
+Email: leo-hon@outlook.com  
+LinkedIn: https://www.linkedin.com/in/leo-hon/  
 Portfolio: https://leohcodes.tech/
