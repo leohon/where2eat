@@ -58,7 +58,7 @@ header {
   margin-top: 25px;
 }
 
-h1 {
+h1, .subtitle {
   text-align: center;
   padding: 20px 0;
 }
@@ -151,7 +151,7 @@ button {
   border-radius: 25px;
   width: 30%;
   margin-bottom: 20px;
-  background-color: orange;
+  background-color: #F0BD6A;
 }
 
 .card p {
@@ -178,7 +178,7 @@ footer {
   }
   
   .letter::after {
-    width: 88%;
+    width: 90%;
   }
 
   .card {
@@ -195,8 +195,12 @@ footer {
     font-size: 1rem;
   }
 
-  .letter::after {
-    width: 85%;
+  .card p {
+    font-size: 1rem;
+  }
+
+  .cardContainer {
+    margin-right: 35px;
   }
 }
 
@@ -209,11 +213,50 @@ footer {
     width: 100%;
   }
 
+  .steps p {
+    font-size: 1rem;
+  }
+
   label {
     text-align: left;
+  }
+
+  .letter::after {
+    width: 87%;
+  }
+
+  .cardContainer {
+    margin-right: 25px;
   }
 }
 
 @media (max-width: 450px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .userUse h2, label {
+    font-size: 1rem;
+  }
+
+  h4, .steps p, .card p {
+    font-size: 0.75rem;
+  }
+
+  h1, .subtitle {
+    padding: 10px 0;
+  }
+
+  label {
+    width: 100%;
+    text-align: center;
+  }
   
+  .letter h2 {
+    font-size: 1.25rem;
+  }
+
+  .letter::after {
+    width: 83%;
+  }
 }
