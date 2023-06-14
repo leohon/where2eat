@@ -1,5 +1,5 @@
 import './App.css';
-import { getDatabase, ref} from 'firebase/database';
+import { getDatabase, ref, remove} from 'firebase/database';
 import { DatabaseProvider, useDatabaseObjectData, useFirebaseApp } from 'reactfire';
 import Header from './components/Header';
 import Steps from './components/Steps';
@@ -41,12 +41,23 @@ function App() {
 
     // Loop through array and print the card.
     for (let j = 0; j < dataArray.length; j++) {
-      // Create the card (with class name) and p elements for the data.
+      // Create the card (with class name), p elements for the data, and remove button.
       const card = document.createElement("div");
       card.classList.add("card");
       const name = document.createElement("p");
       const address = document.createElement("p");
       const dish = document.createElement("p");
+      const rm = document.createElement("button");
+      rm.classList.add("remove");
+
+      // Added remove button to card.
+      rm.innerHTML = "Remove";
+      rm.addEventListener("click", () => {
+        const rmRef = ref(database, `/${dataArray[j].key}`);
+
+        remove(rmRef);
+      });
+
 
       // Determine the specific card container
       const block = check(dataArray[j].name[0]);
@@ -64,6 +75,7 @@ function App() {
       card.appendChild(name);
       card.appendChild(address);
       card.appendChild(dish);
+      card.append(rm);
       block.appendChild(card);
     }
   }
